@@ -1,0 +1,111 @@
+.secaoperfil{
+    background-color: #1A1E47;
+    grid-area: a;
+    height: 100%;
+    border-radius: 20px;
+}
+.tituloefoto{
+    background-color: #5750F0;
+    border-radius: 20px;
+    height: 80%;
+}
+.foto{   /* foi */
+    height: 20%;
+    align-self: flex-start;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.tituloefoto h1{
+    color: #FFF;
+    margin-left: 25px;
+    font-size: 1em;
+    margin-top: 30px;
+}
+.tituloefoto .nome{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+.nome h2{
+    color: #FFF;
+}
+.nomeum, .nomedois{
+    line-height: 0;
+}
+.nomedois{
+    margin-top: 25px;
+}
+.nomeum{
+    margin-top: 20px;
+}
+
+.secaobotoes{ /* foi */
+    
+    height: 20%;
+    display: grid;
+    flex-direction: column;
+    align-content: space-evenly;
+    border-radius: 20px;
+}
+.choose{ /* aki */
+    text-align: left;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #6163A6;
+} 
+.choose:hover { 
+    cursor: pointer;
+}
+.choose:focus{
+    color: #FFF;
+}
+
+/* **************************  900 */
+@media (max-width: 900px){
+    .tituloefoto{
+        display: flex;
+    }
+    .foto{   /* aki */
+        height: 50%;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    .nome{
+        display: flex;
+    }
+    .nomeum, .nomedois{
+        line-height: 0;
+    }
+    .nomedois{
+        margin-top: 0;
+    }
+    .nomeum{
+        margin-top: 0;
+    }
+    .secaobotoes{
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .choose{
+        text-align: left;
+        margin: 0 20px;
+        width: 100px;
+    }
+    .secaoperfil{
+        height: 200px;
+    }
+    .choose{
+        text-align: center;
+    }
+    .reportenome{
+        margin-top: 20px;
+    }
+    .nomeum, .nomedois  {
+        font-size: 1em;
+    }
+
+}

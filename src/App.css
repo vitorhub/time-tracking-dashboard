@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*{ /* modelo reset */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
+  display: grid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+  width: 90%;
+  height: 95vh;
+  margin: 20px auto 0 auto;
+  display: grid;
+  background-color: #000;
+  grid-template-areas: 
+    "a b c d"
+    "a e f g";
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(auto-fit, minmax(100px, auto)) */
+  grid-template-rows: 180px 180px;
+  align-content: center;
+  gap: 10px;
+}
+@media (max-width: 900px){
+  .container{
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "e f g";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 150px 150px;
+    height: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 750px){
+  .container{
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d e"
+    "f g";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 150px 150px 150px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 500px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 375px;
   }
 }

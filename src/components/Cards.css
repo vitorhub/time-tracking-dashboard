@@ -1,0 +1,97 @@
+/* div card dentro de <> no return do jsx */
+.Work{
+    background-color: #FF8B64;
+    grid-area: b;
+}
+.Play{
+    background-color: #56C2E6;
+    grid-area: c;
+    
+}
+.Study{
+    background-color: #FF5E7D;
+    grid-area: d;
+    
+}
+.Exercise{
+    background-color: #4BCF83;
+    grid-area: e;
+    
+}
+.Social{
+    background-color: #7235D1;
+    grid-area: f;
+    
+}
+.Self-Care{
+    background-color: #F1C75B;
+    grid-area: g;
+    
+}
+.card{  /* aki */
+    min-height: 150px;
+    position: relative;
+    border-radius: 20px;
+}
+.colorido .icone{
+    width: 70px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 60%;
+}
+.colorido{
+    height: 30%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.secaoinfo{
+    background-color: #1A1E47;
+    border-radius: 18px;
+    height: 70%;
+    padding: 20px;
+}
+.secaoinfo:hover{
+    background-color: #2B336D;
+}
+.statusellipsis{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ellipsis{
+    display: flex;
+    align-items: center;
+    width: 20px;
+}
+.statusellipsis h2{
+    font-size: 1.1em;
+    color: #FFF;
+}
+.periodos{
+    height: 70%;
+}
+.periodos h2{
+    font-size: 2em;
+    color: #FFF;
+}
+.periodos small{
+    color: #FFF;
+}
+@media (max-width: 900px){
+    .card{
+        max-height: 150px;
+    }
+}
+@media (max-width: 500px){
+    .periodos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 375px){
+    .card{
+
+    }
+}

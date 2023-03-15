@@ -1,0 +1,33 @@
+.footer{
+    font-size: .8rem;
+    background-color: #1E1E1E;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    margin: auto auto;
+    /* bottom: 0; se fosse absoluto*/
+}
+.footer a{
+    text-decoration: none;
+    color: #4fc3f1;
+    word-wrap:normal ;
+    word-wrap: break-word;
+    
+}
+@media (max-width: 900px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (max-width: 750px){
+    .footer{
+        position: relative;
+    }
+}
