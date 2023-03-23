@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Desafio Time Tracking Dashboard do site frontendmentor.io
+<img width=470 src="src/images/timetracking.gif">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição:
+Página responsiva para diversas telas. Exibe horas empregadas em cada tópico por dia semana e mes.\
+<a href="https://femtimetrackingdashboard.netlify.app/">Link do site, veja o responsivo</a>
 
-## Available Scripts
+## Indice
+- <a href="#aprendizagens">Aprendizagens e desafios</a>
+- <a href="#funcionalidades"> Funcionalidades </a>
+- <a href="#tecnologias"> Tecnologias </a>
+- <a href="#rodar"> Como rodar? </a>
+- <a href="#colaboradores"> Colaboradores </a>
+- <a href="#next"> Proximos passos </a>
+- <a href="#contato"> Contatos </a>
 
-In the project directory, you can run:
+## Aprendizagens
+- [x] A maior parte da tipagem typescript foi inferida com alguns componentes mais especificados.
+- [x] Utilização do json simulando um banco de dados.
+- [x] Primeira utilização do grid combinado com flex box com responsivo adaptado a diversos tamanhos.
+- [x] Por não haver evolução de estado foi empregado context API para estados globais.
 
-### `npm start`
+## Funcionalidades
+- [x] Botões de alteração de horas gastas por tópico separando por total diário, total semanal e total mensal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias
+1. [React](https://pt-br.reactjs.org)
+2. [Grid CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/)
+3. [Flexbox CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox/)
+4. [Typescript](https://www.typescriptlang.org/docs/)
+5. [Context API](https://legacy.reactjs.org/docs/context.html/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## rodar
+```bash
+# Projeto inicializado com Create React App
+# https://github.com/facebook/create-react-app
 
-### `npm test`
+# Clone o repositório na pasta desejada
+$ git clone https://github.com/vitorhub/time-tracking-dashboard.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Acesse a pasta do projeto no seu terminal
+$ cd time-tracking-dashboard/
 
-### `npm run build`
+# Instale as dependencias
+$ npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Inicialize o projeto no navegador
+$ npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Para criar o arquivo de produção
+$ npm run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# A aplicação será acessada na porta 3000,
+acesse pelo navegador: http://localhost:3000
+```
 
-### `npm run eject`
+## Colaboradores
+Vitor Falcao\
+<img style="width: 100px" src="https://avatars.githubusercontent.com/u/29690449?v=4" alt="imagem desenvolvedor">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## next
+- [ ] Aprofundamento da tipagem de elementos DOM.
+- [ ] Substituir o arquivo json por um banco de dados
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contato
+<a href="https://www.linkedin.com/in/vitorfalcaodesenvolvedor/"> Linkedin </a>

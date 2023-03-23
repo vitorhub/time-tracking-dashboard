@@ -50,7 +50,7 @@ function Cards({ value }: ICards) {
       }
     } // retorna frase yesterday last week e last month
 
-    function escolheLogo(e: any): any {
+    function escolheLogo(e: any) {
       if (e === 'Work') { return work }
       else if (e === 'Play') { return play }
       else if (e === 'Study') { return study }
@@ -59,9 +59,16 @@ function Cards({ value }: ICards) {
       else if (e === 'Self Care') { return selfcare }
     } // Retorna a logo de acordo com o status
 
+    interface AdInterface {
+      timeframes: any;
+      title(title: any ): string | undefined;
+      replace(replace: any ): any;
+      item?: string | HTMLImageElement;
+  }
+
     return ( // monta o componente
       <>
-        {stateArray.map((item: any, index: number) => (
+        {stateArray.map((item: AdInterface | any , index: number) => (
           <div key={index} className={"card"+" "+(item.title.replace(" ", "-"))}>
             <div className="colorido">
               <img src={escolheLogo(item.title)} className={"icone"} alt="icones" />
@@ -69,7 +76,7 @@ function Cards({ value }: ICards) {
 
             <div className="secaoinfo">
               <div className="statusellipsis">
-                <h2>{item.title} {/* Work */}</h2>
+                <h2>{item.title}</h2>
                 <img src={ellipsis} className="ellipsis" alt="ellipsis" />{/* ... */}
               </div>
               <div className="periodos">

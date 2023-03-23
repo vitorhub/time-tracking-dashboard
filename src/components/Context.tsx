@@ -19,7 +19,7 @@ type ContainerProps = {
   // children: JSX.Element | JSX.Element[]
 };
 
-const INITIAL_ARRAY: any = data
+const INITIAL_ARRAY: {} = data   /* aki tirei any e coloquei {} para objeto */
 
 const Context = (props: ContainerProps) => {
   const [periodo, setPeriodo] = useState("Day");
